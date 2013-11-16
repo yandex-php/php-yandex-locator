@@ -1,13 +1,14 @@
 {
     "name": "yandex/locator",
-    "description": "PHP-library for interactions with Yandex.Locator",
-    "minimum-stability": "stable",
-    "keywords": ["api", "yandex", "locator"],
     "type": "library",
+    "description": "PHP-library for interactions with Yandex.Locator",
+    "keywords": ["api", "yandex", "locator"],
+    "license": "The MIT License (MIT)",
     "authors": [
         {
             "name": "Dmitry Kuznetsov",
-            "email": "kuznetsov2d@gmail.com"
+            "email": "kuznetsov2d@gmail.com",
+            "homepage": "http://dmkuznetsov.com"
         }
     ],
     "require": {
@@ -17,5 +18,10 @@
         "psr-0": {
             "Yandex\\Locator": "source/"
         }
+    },
+    "support": {
+        "source": "https://github.com/dmkuznetsov/php-yandex-locator",
+        "issues": "https://github.com/dmkuznetsov/php-yandex-locator/issues",
+        "wiki": "https://github.com/dmkuznetsov/php-yandex-locator/wiki"
     }
 }
