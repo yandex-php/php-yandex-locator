@@ -32,8 +32,8 @@ class Response
     public function getAltitude()
     {
         $result = null;
-        if (isset($data['position']['altitude']) && !empty($data['position']['altitude'])) {
-            $result = (float)$data['position']['altitude'];
+        if (isset($this->_data['position']['altitude']) && !empty($this->_data['position']['altitude'])) {
+            $result = (float)$this->_data['position']['altitude'];
         }
         return $result;
     }
@@ -45,8 +45,8 @@ class Response
     public function getAltitudePrecision()
     {
         $result = null;
-        if (isset($data['position']['altitude_precision']) && !empty($data['position']['altitude_precision'])) {
-            $result = (float)$data['position']['altitude_precision'];
+        if (isset($this->_data['position']['altitude_precision']) && !empty($this->_data['position']['altitude_precision'])) {
+            $result = (float)$this->_data['position']['altitude_precision'];
         }
         return $result;
     }
@@ -58,8 +58,8 @@ class Response
     public function getLatitude()
     {
         $result = null;
-        if (isset($data['position']['latitude']) && !empty($data['position']['latitude'])) {
-            $result = (float)$data['position']['latitude'];
+        if (isset($this->_data['position']['latitude']) && !empty($this->_data['position']['latitude'])) {
+            $result = (float)$this->_data['position']['latitude'];
         }
         return $result;
     }
@@ -71,8 +71,8 @@ class Response
     public function getLongitude()
     {
         $result = null;
-        if (isset($data['position']['longitude']) && !empty($data['position']['longitude'])) {
-            $result = (float)$data['position']['longitude'];
+        if (isset($this->_data['position']['longitude']) && !empty($this->_data['position']['longitude'])) {
+            $result = (float)$this->_data['position']['longitude'];
         }
         return $result;
     }
@@ -84,8 +84,8 @@ class Response
     public function getPrecision()
     {
         $result = null;
-        if (isset($data['position']['precision']) && !empty($data['position']['precision'])) {
-            $result = (float)$data['position']['precision'];
+        if (isset($this->_data['position']['precision']) && !empty($this->_data['position']['precision'])) {
+            $result = (float)$this->_data['position']['precision'];
         }
         return $result;
     }
@@ -97,8 +97,8 @@ class Response
     public function getType()
     {
         $result = null;
-        if (isset($data['position']['type']) && !empty($data['position']['type'])) {
-            $result = trim($data['position']['type']);
+        if (isset($this->_data['position']['type']) && !empty($this->_data['position']['type'])) {
+            $result = trim($this->_data['position']['type']);
         }
         return $result;
     }
